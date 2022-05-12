@@ -1,0 +1,68 @@
+@media screen and (max-width: 768px) {
+  /* ------------------------ ヘッダー ------------------------ */
+  .title {
+    font-size: 2.3rem;
+    margin-left: 20px;
+  }
+
+  .header-nav {
+    margin-right: 20px;
+  }
+
+  .header-nav a{
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 1.3rem;
+  }
+
+  /* ------------------------ 過去の投稿 ------------------------ */
+  .archive-container {
+    margin: 0 20px;
+  }
+
+  .span-red {
+    font-size: 1.4rem;
+  }
+
+  .list-title a {
+    font-size: 1.4rem;
+    margin-left: 15px;
+  }
+
+  .list-detail span {
+    font-size: 1.4rem;
+    padding-left: 5px;
+  }
+  
+  .list-no, .list-view {
+    margin-left: 20px;
+  }
+
+  /* ------------------------ クチコミ詳細画面 ------------------------ */
+  .detail-main {
+    margin: 80px 20px;
+  }
+
+  .left {
+    width: 300px;
+    margin-right: 5px;
+  }
+
+  .right {
+    margin-left: 5px;
+  }
+
+  canvas {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* ------------------------ クチコミ一覧 ------------------------ */
+  #detail-comments ul {
+    margin: 0 50px;
+  }
+
+  .edit-form-inner {
+    width: 400px;
+  }
+}

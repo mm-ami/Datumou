@@ -1,0 +1,444 @@
+:root {
+  --keycolor: #f1c846;
+  --noeffective: #4a8255;
+  --basecolor: #3b3938;
+  --backcolor: #F0F0E0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--backcolor);
+  color: var(--basecolor);
+}
+
+#container {
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.error {
+  background: #F0A8A8;
+  margin: 10px 40px;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.info {
+  background: #CCD5E3;
+  margin: 10px 40px;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* ------------------------ ヘッダー ------------------------*/
+header {
+  z-index: 100;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: var(--basecolor);
+  font-size: 2.5rem;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: var(--keycolor);
+}
+
+.header-nav {
+  margin-right: 40px;
+}
+
+.header-nav a{
+  border: 2px solid var(--basecolor);
+  background-color: var(--keycolor);
+  padding: 13px;
+  border-radius: 10px;
+  color: var(--basecolor);
+  margin-left: 10px;
+  font-size: 1.3rem;
+}
+
+.header-nav a:hover,
+#main-title a:hover {
+  background-color: var(--backcolor);
+}
+
+/* ------------------------ ホーム画面 ------------------------  */
+#main-title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#main-title h2 {
+  font-size: 2.3rem;
+}
+
+#main-title h3 {
+  margin-top: 10px;
+  font-size: 1.8rem;
+}
+
+#main-title a {
+  border: 2px solid var(--basecolor);
+  background-color: var(--keycolor);
+  padding: 13px 25px;
+  border-radius: 10px;
+  color: var(--basecolor);
+  font-size: 1.3rem;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.card {
+	width: 100%;
+}
+
+.card-inner {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px 20px;
+  margin: 80px auto 0;
+}
+
+.card-item {
+  list-style: none;
+  border: 2px solid var(--basecolor);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.card-title {
+  color: var(--basecolor);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card-title:hover,
+.list-title a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--basecolor);
+}
+
+.card-detail {
+  display: block;
+  border: 1px solid var(--basecolor);
+  text-align: center;
+  border-radius: 7px;
+  color: var(--basecolor);
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.card-detail:hover {
+  color: var(--keycolor);
+}
+
+/* ------------------------ ログイン画面 新規作成 ------------------------ */
+.form-inner {
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border: 2px solid var(--basecolor);
+  border-radius: 10px;
+  padding: 24px;
+  background-color: var(--keycolor);
+}
+
+.form-inner h2 {
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.inner label {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.inner input {
+  border: 2px solid var(--basecolor);
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form-btn a {
+  color: var(--basecolor);
+  font-size: 1.4rem;
+}
+
+.form-btn a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--basecolor);
+}
+
+.form-btn input {
+  border: 2px solid var(--basecolor);
+  border-radius: 7px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: var(--basecolor);
+  color: var(--backcolor);
+  font-weight: bold;
+}
+
+.form-btn input:hover {
+  background-color: var(--backcolor);
+  color: var(--basecolor);
+}
+
+/* ------------------------ 過去の投稿 ------------------------ */
+.card-number {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-number p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card-number p:nth-child(1) {
+  color: var(--keycolor);
+}
+
+.card-number p:nth-child(2) {
+  color: var(--noeffective);
+}
+
+.archive-title {
+  font-size: 2.3rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.public {
+  vertical-align: super;
+  padding: 8px 10px;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.span-red {
+  background-color: #F0A8A8;
+}
+
+.span-blue {
+  background-color: #CCD5E3;
+}
+
+/* ------------------------ 詳細画面 & 口コミ ------------------------  */
+.detail-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.left {
+  width: 450px;
+  margin-right: 15px;
+}
+
+.right {
+  margin-left: 15px;
+}
+
+.left h2 {
+  font-size: 4rem;
+}
+
+.left p {
+  margin-bottom: 2px;
+}
+
+.existence {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.effective div:nth-child(1),
+.noeffective div:nth-child(1) {
+  font-size: 6rem;
+  text-align: center;
+}
+
+.effective div:nth-child(2),
+.noeffective div:nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.effective div:nth-child(1) {
+  color: var(--keycolor);
+}
+
+.noeffective div:nth-child(1) {
+  color: var(--noeffective);
+}
+
+.form-check-inline {
+  display: inline-block;
+  margin: 30px 0 2px 0;
+}
+
+.form-check-label {
+  font-size: 1.5rem;
+  padding-right: 10px;
+}
+
+.form-group textarea {
+  width: 100%;
+  height: 160px;
+  padding: 8px;
+  border-radius: 7px;
+  border: 2px solid var(--basecolor);
+  font-size: 1.5rem;
+  outline: none;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.detail-input {
+  margin-top: 10px;
+  background-color: var(--keycolor);
+  border: 2px solid var(--basecolor);
+  padding: 10px;
+  width: 100%;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.detail-input:hover,
+.login-prompt a:hover {
+  background-color: var(--basecolor);
+  color: var(--backcolor);
+}
+
+/* ------------------------ 詳細画面 & 口コミ ------------------------  */
+#detail-comments ul {
+  margin: 0 150px;
+}
+
+.comment-effective {
+  background: var(--keycolor);
+  padding: 5px 8px;
+  border-radius: 7px;
+}
+
+.comment-noeffective {
+  background: var(--noeffective);
+  padding: 5px 8px;
+  border-radius: 7px;
+}
+
+.comments-list {
+  border: 2px solid var(--basecolor);
+  border-radius: 10px;
+  list-style: none;
+  padding: 10px;
+  margin-top: 35px;
+}
+
+.comments-title h2 {
+  display: flex;
+  align-items: center;
+}
+
+.comments-title h2 span:nth-child(2) {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.comments-body {
+  margin-top: 7px;
+  font-size: 1.5rem;
+}
+
+.login-prompt {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.login-prompt div {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.login-prompt a {
+  display: inline-block;
+  background-color: var(--keycolor);
+  border: 2px solid var(--basecolor);
+  padding: 10px;
+  width: 100%;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 0 auto;
+  color: var(--basecolor);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* ------------------------ 過去の投稿 ------------------------  */
+.edit-form-inner {
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border: 2px solid var(--basecolor);
+  border-radius: 10px;
+  padding: 24px;
+  background-color: var(--keycolor);
+}
+
+select {
+  border: 2px solid var(--basecolor);
+  border-radius: 7px;
+  padding: 10px;
+}
+
+/* ------------------------ 404 ------------------------  */
+.not-page {
+  text-align: center;
+  margin-top: 100px;
+}

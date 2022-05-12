@@ -1,0 +1,36 @@
+@media screen and (max-width: 1060px) {
+  /* ------------------------ 過去の投稿 ------------------------ */
+  .archive-container {
+    margin: 0 40px;
+  }
+
+  .list-no, .list-view {
+    margin-left: 20px;
+  }
+
+  /* ------------------------ クチコミ詳細画面 ------------------------ */
+  .detail-main {
+    margin: 80px 25px;
+  }
+
+  .left {
+    width: 400px;
+  }
+
+  .left h2 {
+    font-size: 3rem;
+  }
+
+  .existence {
+    margin-top: 10px;
+  }
+  
+  .right {
+    margin-left: 15px;
+  }
+
+  /* ------------------------ クチコミ一覧 ------------------------ */
+  #detail-comments ul {
+    margin: 0 70px;
+  }
+}
